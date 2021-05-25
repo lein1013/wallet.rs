@@ -1,5 +1,12 @@
 # Changelog
 
+## \[0.4.1]
+
+- Added optional remainder property in BalanceChangeEvent.
+  - [a8bb9306](https://github.com/iotaledger/wallet.rs/commit/a8bb9306861bb7e965354ce3c94e6de2df5e28fd) add remainder property in BalanceChangeEvent ([#627](https://github.com/iotaledger/wallet.rs/pull/627)) on 2021-05-21
+- Change input selection to not always use all outputs from an address, but only the required ones.
+  - [bc977be6](https://github.com/iotaledger/wallet.rs/commit/bc977be636261bbd1dc0da0d42ce7048343960aa) Change input selection ([#424](https://github.com/iotaledger/wallet.rs/pull/424)) on 2021-05-21
+
 ## \[0.4.0]
 
 - Websocket is used as default now and new fields are added to the BrokerOptions.
