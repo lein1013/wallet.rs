@@ -65,8 +65,8 @@ jobs:
      - name: Build wheels
        working-directory: bindings/python/native
        run: |
-         ${{ matrix.python }} -m pip install -Iv maturin==0.9.4
-         maturin build --release --manylinux off
+         ${{ matrix.python }} -m pip install -Iv maturin==0.10.6
+         maturin build --release
 
      - uses: actions/upload-artifact@v2
        with:
