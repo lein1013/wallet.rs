@@ -62,7 +62,7 @@ jobs:
          sudo apt-get update
          sudo apt-get install libudev-dev libusb-1.0-0-dev
 
-     - name: Build wheels
+     - name: Build wheels multlinux
        working-directory: bindings/python/native
        run: |
          ${{ matrix.python }} -m pip install -Iv maturin==0.10.6
